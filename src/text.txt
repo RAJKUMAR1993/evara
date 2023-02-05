@@ -1,0 +1,855 @@
+  <div className="App">
+        <div className={"row"}>
+          <div className={"item"}>
+            <Loader
+              type="box-rotate-x"
+              bgColor={"#FFFFFF"}
+              title={"box-rotate-x"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="box-rotate-y"
+              bgColor={"#FFFFFF"}
+              title={"box-rotate-y"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="box-rotate-z"
+              bgColor={"#FFFFFF"}
+              title={"box-rotate-z"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="box-up"
+              bgColor={"#FFFFFF"}
+              title={"box-up"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+        </div>
+        <div className={"row"}>
+          <div className={"item"}>
+            <Loader
+              type="bubble-scale"
+              bgColor={"#FFFFFF"}
+              title={"bubble-scale"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="heart"
+              bgColor={"#FFFFFF"}
+              title={"heart"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="bubble-top"
+              bgColor={"#FFFFFF"}
+              title={"bubble-top"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="spinner-cub"
+              bgColor={"#FFFFFF"}
+              title={"spinner-cub"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+        </div>
+        <div className={"row"}>
+          <div className={"item"}>
+            <Loader
+              type="spinner-circle"
+              bgColor={"#FFFFFF"}
+              title={"spinner-circle"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="spinner-default"
+              bgColor={"#FFFFFF"}
+              title={"spinner-default"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="bubble-ping"
+              bgColor={"#FFFFFF"}
+              title={"bubble-ping"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="ekvalayzer"
+              bgColor={"#FFFFFF"}
+              title={"ekvalayzer"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+        </div>
+        <div className={"row"}>
+          <div className={"item"}>
+            <Loader
+              type="box-rectangular"
+              bgColor={"#FFFFFF"}
+              title={"box-rectangular"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="hourglass"
+              bgColor={"#FFFFFF"}
+              title={"hourglass"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="bubble-spin"
+              bgColor={"#FFFFFF"}
+              title={"bubble-spin"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+          <div className={"item"}>
+            <Loader
+              type="rectangular-ping"
+              bgColor={"#FFFFFF"}
+              title={"rectangular-ping"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+        </div>
+        <div className={"row"}>
+          <div className={"item"}>
+            <Loader
+              type="bubble-loop"
+              bgColor={"#FFFFFF"}
+              title={"bubble-loop"}
+              color={"#FFFFFF"}
+              size={100}
+            />
+          </div>
+        </div>
+      </div>
+
+      ----------------------------------------
+
+       {/* <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-primary">New</div>
+                    <Link className="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-3.jpg"
+                        alt=""
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Cyan cotton t-shirt
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$25</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-2.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Air Jordan 12 gym red
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-4.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Timex Unisex Originals
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-primary">New</div>
+                    <Link className="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-5.jpg"
+                        alt=""
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Red digital smartwatch
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$25</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-6.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Nike air max 95
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-7.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Joemalone Women prefume
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-primary">New</div>
+                    <Link className="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-8.jpg"
+                        alt=""
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Apple Watch
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$25</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-9.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Men silver Byron Watch
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-10.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Ploaroid one step camera
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-primary">New</div>
+                    <Link className="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-11.jpg"
+                        alt=""
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Gray Nike running shoes
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$25</p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product text-center">
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100"
+                        src="img/product-12.jpg"
+                        alt=".ss"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-dark" to="#">
+                            Add to cart
+                          </Link>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      Black DSLR lense
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">$250</p>
+                </div>
+              </div>
+
+              ------------------------------------------
+                    {/* <ul className="pagination justify-content-center justify-content-lg-center">
+              <li className="page-item mx-1">
+                <Link className="page-link" to="#!" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                </Link>
+              </li>
+              <li className="page-item mx-1 active">
+                <Link className="page-link" to="#!">
+                  1
+                </Link>
+              </li>
+              <li className="page-item mx-1">
+                <Link className="page-link" to="#!">
+                  2
+                </Link>
+              </li>
+              <li className="page-item mx-1">
+                <Link className="page-link" to="#!">
+                  3
+                </Link>
+              </li>
+              <li className="page-item ms-1">
+                <Link className="page-link" to="#!" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </Link>
+              </li>
+            </ul> */}
+
+======================================================================
+import React from "react";
+import Meta from "../componets/Meta";
+import Breadcrumb from "../componets/Breadcrumb";
+import { Link } from "react-router-dom";
+import { AiOutlineExpand, AiOutlineHeart } from "react-icons/ai";
+
+const Products = (product, addToCart) => {
+  console.log(product);
+  //addToCart
+  const addToCart = (carData) => {
+    console.log(cart);
+    setCart([...cart, carData]);
+  };
+  return (
+    <>
+      <Meta title={"Products"} />
+      <Breadcrumb title="Products" />
+      <div className="row">
+        {product.map((getData, index) => {
+          // const images =
+          //   getData.images && getData.images.length > 0
+          //     ? getData.images[0]
+          //     : "No Image";
+
+          return (
+            <>
+              <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                <div className="product p-height text-center" key={index}>
+                  <div className="mb-3 position-relative">
+                    <div className="badge text-white bg-"></div>
+                    <Link v="d-block" to="#">
+                      <img
+                        className="img-fluid w-100 productImageHeight"
+                        src={getData.image}
+                        alt="noProduct"
+                      />
+                    </Link>
+                    <div className="product-overlay">
+                      <ul className="mb-0 list-inline">
+                        <li className="list-inline-item m-0 p-0">
+                          <Link className="btn btn-sm btn-outline-dark" to="#">
+                            <AiOutlineHeart className="fs-2" />
+                          </Link>
+                        </li>
+                        <li className="list-inline-item m-0 p-0">
+                          <button
+                            className="btn btn-sm btn-dark"
+                            onClick={() => addToCart(getData)}
+                          >
+                            Add to cart
+                          </button>
+                        </li>
+                        <li className="list-inline-item mr-0">
+                          <Link
+                            className="btn btn-sm btn-outline-dark"
+                            to="#productView"
+                            data-bs-toggle="modal"
+                          >
+                            <AiOutlineExpand className="fs-2" />
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h6>
+                    <Link
+                      className="reset-anchor text-decoration-none text-dark"
+                      to="#"
+                    >
+                      {getData.title}
+                    </Link>
+                  </h6>
+                  <p className="small text-muted">
+                    <b>${getData.price}</b>
+                  </p>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Products;
+-----------------------------------------------------------
+   {product.map((getData, index) => {
+                // const images =
+                //   getData.images && getData.images.length > 0
+                //     ? getData.images[0]
+                //     : "No Image";
+
+                return (
+                  <>
+                    <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
+                      <div className="product p-height text-center" key={index}>
+                        <div className="mb-3 position-relative">
+                          <div className="badge text-white bg-"></div>
+                          <Link v="d-block" to="#">
+                            <img
+                              className="img-fluid w-100 productImageHeight"
+                              src={getData.image}
+                              alt="noProduct"
+                            />
+                          </Link>
+                          <div className="product-overlay">
+                            <ul className="mb-0 list-inline">
+                              <li className="list-inline-item m-0 p-0">
+                                <Link
+                                  className="btn btn-sm btn-outline-dark"
+                                  to="#"
+                                >
+                                  <AiOutlineHeart className="fs-2" />
+                                </Link>
+                              </li>
+                              <li className="list-inline-item m-0 p-0">
+                                <button className="btn btn-sm btn-dark">
+                                  Add to cart
+                                </button>
+                              </li>
+                              <li className="list-inline-item mr-0">
+                                <Link
+                                  className="btn btn-sm btn-outline-dark"
+                                  to="#productView"
+                                  data-bs-toggle="modal"
+                                >
+                                  <AiOutlineExpand className="fs-2" />
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <h6>
+                          <Link
+                            className="reset-anchor text-decoration-none text-dark"
+                            to="#"
+                          >
+                            {getData.title}
+                          </Link>
+                        </h6>
+                        <p className="small text-muted">
+                          <b>${getData.price}</b>
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
