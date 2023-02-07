@@ -6,8 +6,6 @@ import Logo from "../logo/logo.svg";
 import { CartContext } from "../context/ProductContext";
 
 const Navbar = () => {
-  // const cartcount = localStorage.getItem("cartdata");
-  // console.log(cartcount,"countdata--->");
   const cartCount = useContext(CartContext);
   const count = cartCount.cart.length;
   return (

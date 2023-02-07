@@ -2,6 +2,7 @@ import axios from "axios";
 
 // register user Api Data
 const base_URL = "https://webla-api.uc.r.appspot.com/api/v1";
+
 export const userRegisterApi = async (userRegData) => {
   const response = await axios({
     method: "POST",
@@ -61,6 +62,24 @@ export const addToCartData = async (cartData) => {
     data: {
       id: cartData.id,
       quantity: 1,
+    },
+    headers: {
+      "X-Authorization": `Bearer ${token}`,
+    },
+  });
+  return response;
+};
+
+export const cartRemoveAll = async (id) => {
+  const cartID = localStorage.getItem("CART_ID");
+  const token = localStorage.getItem("TOKEN_ID");
+
+  const response = await axios({
+    method: "DELETE",
+
+    url: `${base_URL}/carts/${cartID}/remove/${id}`,
+    data: {
+      id: id,
     },
     headers: {
       "X-Authorization": `Bearer ${token}`,
