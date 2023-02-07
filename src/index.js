@@ -3,31 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
-
-// import Shop from "./componets/Shop";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//   },
-
-//   {
-//     path: "/shop",
-//     element: <Shop />,
-//   },
-//   {
-//     path: "/about",
-//     element: <div>About</div>,
-//   },
-// ]);
+import CartProvider from "./context/ProductContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <CartProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </CartProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AiFillAppstore } from "react-icons/ai";
 import { FaThList } from "react-icons/fa";
 import { AiOutlineExpand, AiOutlineHeart } from "react-icons/ai";
+import { CartContext } from "../context/ProductContext";
 
-const Products = ({ products, addToCart }) => {
+const Products = ({ products }) => {
+  const { addToCart } = useContext(CartContext);
   return (
     <>
       <div className="container py-5">
@@ -337,6 +339,10 @@ const Products = ({ products, addToCart }) => {
             <hr />
             <div className="row">
               {products.map((productItem, index) => {
+                const image_Url =
+                  productItem.images && productItem.images.length > 0
+                    ? productItem.images[0]
+                    : "No Image";
                 return (
                   <>
                     <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
@@ -346,7 +352,7 @@ const Products = ({ products, addToCart }) => {
                           <Link v="d-block" to="#">
                             <img
                               className="img-fluid w-100 productImageHeight"
-                              src={productItem.image}
+                              src={image_Url}
                               alt="noProduct"
                             />
                           </Link>

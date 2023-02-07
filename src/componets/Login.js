@@ -28,11 +28,14 @@ const Login = () => {
   const onSubmit = async (loginData) => {
     try {
       const response = await userLoginApi(loginData);
-      // console.log(response, "------>");
+      console.log(response, "------>");
       if (response.status === 200) {
         const token = response.data.token;
-        console.log(token);
+        const cartId = response.data.cart_id;
+       
         localStorage.setItem("TOKEN_ID", token);
+        localStorage.setItem("CART_ID", cartId);
+
         toast.success("login successfully ");
         setTimeout(() => {
           navigate("/shop");

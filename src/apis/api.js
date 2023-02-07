@@ -2,7 +2,6 @@ import axios from "axios";
 
 // register user Api Data
 const base_URL = "https://webla-api.uc.r.appspot.com/api/v1";
-const product_URl = "https://fakestoreapi.com/products";
 export const userRegisterApi = async (userRegData) => {
   const response = await axios({
     method: "POST",
@@ -15,6 +14,7 @@ export const userRegisterApi = async (userRegData) => {
     params: {},
     headers: {},
   });
+
   return response;
 };
 
@@ -35,18 +35,36 @@ export const userLoginApi = async (userLoginData) => {
 
 export const getAllProducts = async () => {
   // console.log(setPageNum);
-  // const token = localStorage.getItem("TOKEN_ID");
+  const token = localStorage.getItem("TOKEN_ID");
   const response = await axios({
     method: "GET",
-    url: `${product_URl}`,
+    url: `${base_URL}/products`,
     // params: {
     //   per_page: 10,
     //   page: 3,
     // },
-    // headers: {
-    //   "X-Authorization": `Bearer ${token}`,
-    // },
+    headers: {
+      "X-Authorization": `Bearer ${token}`,
+    },
   });
 
+  return response;
+};
+
+export const addToCartData = async (cartData) => {
+  const token = localStorage.getItem("TOKEN_ID");
+  const cartID = localStorage.getItem("CART_ID");
+
+  const response = await axios({
+    method: "POST",
+    url: `${base_URL}/carts/${cartID}`,
+    data: {
+      id: cartData.id,
+      quantity: 1,
+    },
+    headers: {
+      "X-Authorization": `Bearer ${token}`,
+    },
+  });
   return response;
 };

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import Logo from "../logo/logo.svg";
-const Navbar = (props) => {
+import { CartContext } from "../context/ProductContext";
+
+const Navbar = () => {
+  // const cartcount = localStorage.getItem("cartdata");
+  // console.log(cartcount,"countdata--->");
+  const cartCount = useContext(CartContext);
+  const count = cartCount.cart.length;
   return (
     <>
       <div className="superNav border-bottom py-2   d-lg-block">
@@ -104,8 +110,9 @@ const Navbar = (props) => {
             <ul className="navbar-nav ms-auto ">
               <li className="nav-item">
                 <Link className="nav-link mx-2  " to="/cart">
-                  <BsFillCartCheckFill className="fs-4  " />{" "}
-                  <sup>{props.count}</sup>
+                  <BsFillCartCheckFill className="fs-4  " />
+
+                  <sup>{count}</sup>
                 </Link>
               </li>
               <li className="nav-item">
