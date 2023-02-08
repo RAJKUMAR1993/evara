@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className="container">
           <Link className="navbar-brand " to="/">
             {Logo ? (
-              <img src={Logo} alt="no-ime" className="w50 height_image" />
+              <img src={Logo} alt="no-img" className="w50 height_image" />
             ) : (
               <strong>GEAR SHOP</strong>
             )}
