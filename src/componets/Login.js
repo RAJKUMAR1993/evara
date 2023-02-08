@@ -28,13 +28,17 @@ const Login = () => {
   const onSubmit = async (loginData) => {
     try {
       const response = await userLoginApi(loginData);
-      console.log(response, "------>");
+
       if (response.status === 200) {
         const token = response.data.token;
         const cartId = response.data.cart_id;
-       
+        const user_name = response.data.user_name;
+        const user_id = response.data.user_id;
+
         localStorage.setItem("TOKEN_ID", token);
         localStorage.setItem("CART_ID", cartId);
+        localStorage.setItem("UserName", user_name);
+        localStorage.setItem("userId", user_id);
 
         toast.success("login successfully ");
         setTimeout(() => {
@@ -87,7 +91,7 @@ const Login = () => {
                   </small>
                 </div>
                 <div className="form-group d-flex justify-content-between">
-                  <button type="submit" className="btn btn-success ">
+                  <button type="submit" className="btn btn-success btn-sm ">
                     Submit
                   </button>
                   <p className="ml-3">Already have an account?</p>

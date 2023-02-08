@@ -899,16 +899,30 @@ textarea.form-control-lg {
 .productImageHeight {
   height: 222px !important;
 }
-.counter i{
-    border: 1px solid #000;
-    padding: 7px;
-    display: inline-block;
-    position: relative;
+.counter i {
+  border: 1px solid #000;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
 }
-.cart .table tbody tr td .counter input{
-    width: 100px;
-    padding-left:30px;
-    height: 40px;
-    outline:none;
-    box-shadow: none;
+.cart .table tbody tr td .counter input {
+  width: 100px;
+  padding-left: 30px;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
+}
+sup {
+  top: -0.5em !important;
+  color: blue;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.btn-infobtn {
+  background-color: #088178;
+}
+
+.mrgintop {
+  margin-top: 12px;
 }

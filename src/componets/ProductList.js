@@ -1,9 +1,15 @@
 import React from "react";
+import Meta from "../componets/Meta";
+import Breadcrumb from "../componets/Breadcrumb";
+// import { CartContext } from "../context/ProductContext";
 
-function ProductList(product) {
+function ProductList({ products }) {
+  // const { addToCart } = useContext(CartContext);
+
   return (
     <>
-      <p>scsacsa</p>
+      <Meta title={"ProductList"} />
+      <Breadcrumb title="ProductList" />
     </>
   );
 }

@@ -305,8 +305,8 @@ const Products = ({ products }) => {
           <div className="col-sm-12 col-md-6 col-lg-9 ">
             <div className="row mb-3 align-items-center">
               <div className="col-lg-6 mb-2 mb-lg-0">
-                <p className="text-sm text-muted mb-0">
-                  Showing 1–12 of 53 results
+                <p className="text-sm text-success mb-0">
+                  <strong> Showing 1–12 of {products.length} Products</strong>
                 </p>
               </div>
               <div className="col-lg-6">
@@ -318,7 +318,7 @@ const Products = ({ products }) => {
                   </li>
                   <li className="list-inline-item text-muted me-3">
                     <Link className="reset-anchor p-0" to="#!">
-                      <FaThList className="fs-2 icon-color" />
+                      <FaThList className="fs-4 icon-color" />
                     </Link>
                   </li>
                   <li class="list-inline-item">
@@ -345,8 +345,11 @@ const Products = ({ products }) => {
                     : "No Image";
                 return (
                   <>
-                    <div className="col-lg-4 col-sm-6 col-sm-12 col-12">
-                      <div className="product p-height text-center" key={index}>
+                    <div
+                      className="col-lg-4 col-sm-6 col-sm-12 col-12"
+                      key={index}
+                    >
+                      <div className="product p-height text-center">
                         <div className="mb-3 position-relative">
                           <div className="badge text-white bg-"></div>
                           <Link v="d-block" to="#">
@@ -369,7 +372,9 @@ const Products = ({ products }) => {
                               <li className="list-inline-item m-0 p-0">
                                 <button
                                   className="btn btn-sm btn-dark"
-                                  onClick={() => addToCart(productItem)}
+                                  onClick={() =>
+                                    addToCart(productItem, productItem.id)
+                                  }
                                 >
                                   Add to cart
                                 </button>
@@ -377,7 +382,7 @@ const Products = ({ products }) => {
                               <li className="list-inline-item mr-0">
                                 <Link
                                   className="btn btn-sm btn-outline-dark"
-                                  to="#productView"
+                                  to={`/productlist/${productItem.id}`}
                                   data-bs-toggle="modal"
                                 >
                                   <AiOutlineExpand className="fs-2" />
@@ -389,7 +394,7 @@ const Products = ({ products }) => {
                         <h6>
                           <Link
                             className="reset-anchor text-decoration-none text-dark"
-                            to="#"
+                            to={`/productlist/${productItem.id}`}
                           >
                             {productItem.title}
                           </Link>

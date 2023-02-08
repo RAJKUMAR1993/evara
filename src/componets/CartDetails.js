@@ -7,7 +7,7 @@ import { CartContext } from "../context/ProductContext";
 
 function CartDetails() {
   const contextData = useContext(CartContext);
-  const { removeProduct, amountIncrease, decreaseAmount } =
+  const { removeProduct, amountIncrease, decreaseAmount, total } =
     useContext(CartContext);
 
   return (
@@ -73,39 +73,43 @@ function CartDetails() {
                               Quantity
                             </span>
                             <div className="quantity">
-                              <div className="quantity">
-                                <div className="counter">
-                                  <AiOutlineMinus
-                                    onClick={() => {
-                                      decreaseAmount(item.id);
-                                    }}
-                                  />
-                                  <input
-                                    className="iform-control form-control-sm border-0 shadow-0 p-0"
-                                    type="text"
-                                    value={item.quantity}
-                                    min="0"
-                                    max="10"
-                                  />
-                                  <AiOutlinePlus
-                                    onClick={() => {
-                                      amountIncrease(item.id);
-                                    }}
-                                  />
-                                </div>
-                                {/* <input
+                              <div className="counter">
+                                <button
+                                  className="btn"
+                                  onClick={() => {
+                                    decreaseAmount(item.id);
+                                  }}
+                                >
+                                  <AiOutlineMinus />
+                                </button>
+                                <input
+                                  className=" form-control-sm border-0 shadow-0 p-0"
+                                  type="text"
+                                  value={item.amount}
+                                  min="0"
+                                  max="10"
+                                />
+                                <button
+                                  className="btn"
+                                  onClick={() => {
+                                    amountIncrease(item.id);
+                                  }}
+                                >
+                                  <AiOutlinePlus />
+                                </button>
+                              </div>
+                              {/* <input
                                 className="form-control form-control-sm border-0 shadow-0 p-0"
                                 type="number"
                                 min="0"
                                 
                               /> */}
-                              </div>
                             </div>
                           </div>
                         </td>
                         <td className="p-3 align-middle border-light">
                           <p className="mb-0 small">
-                            {parseFloat(item.quantity * item.price).toFixed(2)}
+                            {parseFloat(item.amount * item.price).toFixed(2)}
                           </p>
                         </td>
                         <td className="p-3 align-middle border-light">
@@ -154,6 +158,45 @@ function CartDetails() {
                 <i className="fas fa-long-arrow-alt-right ms-2"></i>
               </Link>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-4">
+        <div className="card border-0 rounded-0 p-lg-4 bg-light">
+          <div className="card-body">
+            <h5 className="text-uppercase mb-4">Cart total</h5>
+            <ul className="list-unstyled mb-0">
+              <li className="d-flex align-items-center justify-content-between">
+                <strong className="text-uppercase small font-weight-bold">
+                  Subtotal
+                </strong>
+                <span className="text-dark small">{parseFloat(total).toFixed(2)}</span>
+              </li>
+              <li className="border-bottom my-2"></li>
+              <li className="d-flex align-items-center justify-content-between mb-4">
+                <strong className="text-uppercase small font-weight-bold">
+                  Total
+                </strong>
+                <span>Rs.{parseFloat(total).toFixed(2)}</span>
+              </li>
+              <li>
+                <form action="#">
+                  <div className="input-group mb-0">
+                    <input
+                      className="form-control"
+                      type="text"
+                      placeholder="Enter your coupon"
+                    />
+                    <button
+                      className="btn btn-dark btn-sm w-100  mt-2"
+                      type="submit"
+                    >
+                      <i className="fas fa-gift me-2"></i>Apply coupon
+                    </button>
+                  </div>
+                </form>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import {
   Layout,
   Home,
   Shop,
+  ProductList,
   Cart,
   About,
   Contact,
@@ -35,6 +36,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="shop" element={<Shop />} />
+            <Route path="productList" element={<ProductList />} />
+
             <Route path="cart" element={<Cart />} />
             <Route path="wish-list" element={<Wishlist />} />
             <Route path="about-us" element={<About />} />
