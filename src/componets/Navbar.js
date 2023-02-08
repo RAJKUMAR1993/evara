@@ -33,17 +33,17 @@ const Navbar = () => {
       <div className="superNav border-bottom py-2   d-lg-block">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile justify-content-around mrgintop ">
-              <select className=" me-5 border-0 bg-light w-25">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile justify-content-around  ">
+              <select className=" me-5 border-0 bg-light w-25 mrgintop">
                 <option value="en-us">EN-US</option>
                 <option value="en-aus">EN-AUS</option>
                 <option value="en-uk">EN-UK</option>
                 <option value="en-in">EN-IN</option>
               </select>
-              <span className="d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3">
+              <span className=" mrgintop d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3">
                 <strong>rajkumarramineni19@gmail.com</strong>
               </span>
-              <span className="me-3">
+              <span className="me-3 mrgintop">
                 <i className="fa-solid fa-phone me-1 "></i>
                 <strong>+91-9542346230</strong>
               </span>
