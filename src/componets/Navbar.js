@@ -33,57 +33,81 @@ const Navbar = () => {
       <div className="superNav border-bottom py-2   d-lg-block">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 centerOnMobile justify-content-around  ">
-              <select className=" me-5 border-0 bg-light w-25 mrgintop">
-                <option value="en-us">EN-US</option>
-                <option value="en-aus">EN-AUS</option>
-                <option value="en-uk">EN-UK</option>
-                <option value="en-in">EN-IN</option>
-              </select>
-              <span className=" mrgintop d-none d-lg-inline-block d-md-inline-block d-sm-inline-block d-xs-none me-3">
-                <strong>rajkumarramineni19@gmail.com</strong>
-              </span>
-              <span className="me-3 mrgintop">
-                <i className="fa-solid fa-phone me-1 "></i>
-                <strong>+91-9542346230</strong>
-              </span>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none d-lg-block d-md-block-d-sm-block d-xs-none mrgintop text-end ">
-              {userId && UserName ? (
-                <span className="me-3 text-decoration-none">
-                  <button
-                    className=" m-1 text-white btn btn-infobtn btn-sm "
-                    onClick={() => logout()}
-                  >
-                    <strong>Logout</strong>
-                    <CgLogOut className="fs-5 text-white m-1" />
-                  </button>
-                  <span className="text-decoration-none m-4">
-                    <strong>{UserName}</strong>
+            <div className="col-12 col-lg-6 col-md-4 col-sm-12  bloc centerOnMobile justify-content-around  ">
+              <div className="row">
+                <div className="col-12 col-lg-4 col-md-4 col-sm-12 ">
+                  <div className=" justify-content-center  me-3">
+                    {/* <select className=" me-5 border-0 bg-light  from-control mrgintop">
+                      <option value="en-us">EN-US</option>
+                      <option value="en-aus">EN-AUS</option>
+                      <option value="en-uk">EN-UK</option>
+                      <option value="en-in">EN-IN</option>
+                    </select> */}
+                    <select
+                      className="form-select form-select-sm border-0 bg-light m-0"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option value="en-us">EN-US</option>
+                      <option value="en-aus">EN-AUS</option>
+                      <option value="en-uk">EN-UK</option>
+                      <option value="en-in">EN-IN</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="col-12 col-lg-4 col-md-4 col-sm-12 mrgintop">
+                  <span className="   me-3">
+                    <strong>rajkumarramineni19@gmail.com</strong>
                   </span>
-                </span>
-              ) : (
-                <span className="me-3 ">
-                  <Link
-                    className=" m-1 text-white text-decoration-none"
-                    to="/login"
-                  >
-                    <AiOutlineUser className="fs-5 " />
-                    Login
-                  </Link>
-                  /
-                  <Link
-                    className="text-white m-1 text-decoration-none"
-                    to="/signup"
-                  >
-                    Signup
-                  </Link>
-                </span>
-              )}
+                </div>
+                <div className="col-12 col-lg-4 col-md-4 col-sm-12 mrgintop">
+                  <span className="me-3 ">
+                    <i className="fa-solid fa-phone me-1 "></i>
+                    <strong>+91-9542346230</strong>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 col-md-6 col-sm-12 justify-content-center  mrgintop text-end ">
+              <div className="row">
+                <div className="col-12 col-lg-6 col-md-4 col-sm-12 "></div>
+                <div className="col-12 col-lg-6 col-md-4 col-sm-12 ">
+                  {userId && UserName ? (
+                    <span className="me-3 text-decoration-none">
+                      <button
+                        className=" m-1 text-white btn btn-infobtn btn-sm "
+                        onClick={() => logout()}
+                      >
+                        <strong>Logout</strong>
+                        <CgLogOut className="fs-5 text-white m-1" />
+                      </button>
+                      <span className="text-decoration-none m-4">
+                        <strong>{UserName}</strong>
+                      </span>
+                    </span>
+                  ) : (
+                    <span className="me-3 ">
+                      <Link
+                        className=" m-1 text-white text-decoration-none"
+                        to="/login"
+                      >
+                        <AiOutlineUser className="fs-5 " />
+                        Login
+                      </Link>
+                      /
+                      <Link
+                        className="text-white m-1 text-decoration-none"
+                        to="/signup"
+                      >
+                        Signup
+                      </Link>
+                    </span>
+                  )}
 
-              <span className="me-3">
-                <i className="fa-solid fa-file  text-muted me-2"></i>
-              </span>
+                  <span className="me-3">
+                    <i className="fa-solid fa-file  text-muted me-2"></i>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
