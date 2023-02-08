@@ -10,6 +10,9 @@ function CartDetails() {
   const { removeProduct, amountIncrease, decreaseAmount, total } =
     useContext(CartContext);
 
+  const tokenId = localStorage.getItem("TOKEN_ID");
+  const userId = localStorage.getItem("userId");
+
   return (
     <>
       <div className="col-lg-8 mb-4 mb-lg-0">
@@ -152,11 +155,17 @@ function CartDetails() {
               </Link>
             </div>
             <div className="col-md-6 text-md-end">
-              {}
-              <Link className="btn btn-outline-dark btn-sm" to="/">
-                Procceed to checkout
-                <i className="fas fa-long-arrow-alt-right ms-2"></i>
-              </Link>
+              {tokenId && userId ? (
+                <Link className="btn btn-outline-dark btn-sm" to="/">
+                  Procceed to checkout
+                  <i className="fas fa-long-arrow-alt-right ms-2"></i>
+                </Link>
+              ) : (
+                <Link className="btn btn-outline-dark btn-sm" to="/login">
+                  Login
+                  <i className="fas fa-long-arrow-alt-right ms-2"></i>
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -170,7 +179,9 @@ function CartDetails() {
                 <strong className="text-uppercase small font-weight-bold">
                   Subtotal
                 </strong>
-                <span className="text-dark small">{parseFloat(total).toFixed(2)}</span>
+                <span className="text-dark small">
+                  {parseFloat(total).toFixed(2)}
+                </span>
               </li>
               <li className="border-bottom my-2"></li>
               <li className="d-flex align-items-center justify-content-between mb-4">

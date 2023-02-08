@@ -104,10 +104,8 @@ const CartProvider = ({ children }) => {
       setCart(newCart);
     } else {
       if (cartItem.amount > 2) {
-        console.log("No Data");
       }
     }
-    console.log(cartItem);
   };
   return (
     <CartContext.Provider

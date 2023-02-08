@@ -14,9 +14,16 @@ const Navbar = () => {
   const count = cartCount.cart.length;
   const userId = localStorage.getItem("userId");
   const UserName = localStorage.getItem("UserName");
+  //const tokenId = localStorage.getItem("TOKEN_ID");
+  const cartID = localStorage.getItem("CART_ID");
 
   const logout = () => {
-    localStorage.clear();
+    localStorage.removeItem("TOKEN_ID");
+    localStorage.removeItem("CART_ID");
+    localStorage.removeItem("userId");
+    localStorage.removeItem("UserName");
+
+    window.localStorage.clear();
     toast.success("logout Successfully..");
     navigate("/login");
   };
@@ -144,8 +151,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link mx-2  " to="/cart">
                   <BsFillCartCheckFill className="fs-4  " />
-
-                  <sup>{count}</sup>
+                  {cartID ? <sup>{count}</sup> : <sup>{0}</sup>}
                 </Link>
               </li>
               <li className="nav-item">
